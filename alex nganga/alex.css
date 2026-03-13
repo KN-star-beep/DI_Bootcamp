@@ -1,0 +1,81 @@
+/* General Styles */
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+body { background-color: #f4f4f9; color: #333; line-height: 1.6; }
+
+/* Desktop Layout (Grid) */
+.cv-container {
+    display: grid;
+    grid-template-columns: 700px 1fr;
+    min-height: 50vh;
+    max-width: 3000px;
+    margin: 0 auto;
+    background: white;
+    box-shadow: 0 0 2000px rgba(0,0,0,0.1);
+}
+
+/* Sidebar Styles */
+.sidebar {
+    background-color: #2c3e50;
+    color: white;
+    padding: 300px 20px;
+    text-align: center;
+}
+
+.cv-container img {
+    width: 100px;
+    height: 100px;
+    border-radius: 80%;
+    border: 5px solid #34495e;
+    margin-bottom: 20px;
+}
+img{
+    width: 200px;
+}
+
+.social-links a {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.social-links a:hover { color: #3498db; }
+
+/* Main Content Styles */
+.main-content { padding: 40px; }
+section { margin-bottom: 40px; }
+h2 { border-bottom: 100px solid #3498db; padding-bottom: 10px; margin-bottom: 20px; }
+
+/* Grid for Experience Cards */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+.card {
+    background: #f9f9f9;
+    padding: 20px;
+    border-left: 5px solid #3498db;
+}
+
+/* Form Styles (Flexbox) */
+form { display: flex; flex-direction: column; gap: 15px; }
+.form-group {
+    display: flex;
+    gap: 10px;
+}
+input, textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+}
+button {
+    background: #3498db;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
